@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <style>
+      body {
+        margin: 0;
+        background: #01294d;
+        font-family: 'Outfit', sans-serif;
+      }
+      .container {
+        padding: 22px;
+        background: #01396a;
+        border-radius: 1em;
+        margin: 23px;
+        max-width: 24em;
+        margin: 2em auto;
+      }
+      .container2 img {
+        width: 100%;
+        border-radius: 0.375em;
+      }
+      h1 {
+        color: white;
+        font-size: 1.5rem;
+      }
+      .container3 p {
+        color: grey;
+        font: size 1.0625em;
+      }
+      .svg-s {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .svg-inner {
+        display: flex;
+        gap: 8px;
+      }
+
+      .End-Container img {
+        width: 14%;
+        border: 1px solid white;
+        border-radius: 2em;
+        margin-top: 0.9375em;
+      }
+      .last {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.875em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container2">
+        <div class="container3">
+          <img src="./images/image-equilibrium.jpg" alt="Ethereum" />
+          <h1>Equilibrium #3429</h1>
+          <p>One equilibrium collection promotes balance and claim</p>
+        </div>
+        <div class="svg-s">
+          <div class="svg-inner">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            <span style="color: aqua">0.041 ETH</span>
+          </div>
+          <div class="svg-inner">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <span style="color: rgb(169, 205, 230)">3 days left</span>
+          </div>
+        </div>
+        <hr />
+        <div class="End-Container">
+          <div class="last">
+            <img src="./images/image-avatar.png" alt="Jeniffer" />
+            <p
+              style="
+                font-size: 1.063rem;
+                font-weight: lighter;
+                color: rgb(169, 205, 230);
+              "
+            >
+              Creation of
+              <span style="color: white; font-weight: 100">Jules Wyvern</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
